@@ -2,7 +2,18 @@
 A simple interactive quiz app featuring a timer, progress bar, animations, and localStorage-based high score tracking.
 
 ## 📸 Result preview
-![Quiz Screenshot](preview/Screenshot_590.png)
+## 📸 Quiz Preview
+<p align="center">
+  <img src="preview/Screenshot_590.png" alt="Quiz Screenshot" width="400">
+</p>
+
+## 📸 Result Feedback Examples
+
+<p align="center">
+  <img src="preview/Screenshot_594.png" width="250">
+  <img src="preview/Screenshot_596.png" width="250">
+</p>
+
 
 ## 📸 Result preview different screens
 ![Quiz Screenshot](preview/Screenshot_592.png)
@@ -36,8 +47,8 @@ quiz options + visible timer + visible progress bar
 quiz option hovered + visible timer + visible progress bar
 ![Quiz Screenshot](preview/Screenshot_600.png)
 
-quiz option correct + visible timer + visible progress bar
+quiz option correct + visible progress bar
 ![Quiz Screenshot](preview/Screenshot_601.png)
 
-quiz option wrong answer + visible timer + visibe progress bar
+quiz option wrong answer + visibe progress bar
 ![Quiz Screenshot](preview/Screenshot_605.png)
