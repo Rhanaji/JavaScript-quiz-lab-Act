@@ -2,53 +2,76 @@
 A simple interactive quiz app featuring a timer, progress bar, animations, and localStorage-based high score tracking.
 
 ## 📸 Result preview
-## 📸 Quiz Preview
 <p align="center">
   <img src="preview/Screenshot_590.png" alt="Quiz Screenshot" width="400">
 </p>
 
-## 📸 Result Feedback Examples
+## 📸 Result Preview (Different Screens)
 
 <p align="center">
-  <img src="preview/Screenshot_594.png" width="250">
-  <img src="preview/Screenshot_596.png" width="250">
+  <img src="preview/Screenshot_592.png" width="400">
+  <img src="preview/Screenshot_593.png" width="400">
 </p>
 
+---
 
-## 📸 Result preview different screens
-![Quiz Screenshot](preview/Screenshot_592.png)
-![Quiz Screenshot](preview/Screenshot_593.png)
+## 📸 Different Results Feedback
 
-## 📸 Different Results feedback
-1/6 score result
-![Quiz Screenshot](preview/Screenshot_594.png)
+**1/6 Score Result**
+<p align="center">
+  <img src="preview/Screenshot_594.png" width="350">
+</p>
 
-3/6 score result
-![Quiz Screenshot](preview/Screenshot_595.png)
+**3/6 Score Result**
+<p align="center">
+  <img src="preview/Screenshot_595.png" width="350">
+</p>
 
-4/6 score result
-![Quiz Screenshot](preview/Screenshot_596.png)
+**4/6 Score Result**
+<p align="center">
+  <img src="preview/Screenshot_596.png" width="350">
+</p>
 
-6/6 score result
-![Quiz Screenshot](preview/Screenshot_590.png)
+**6/6 Score Result**
+<p align="center">
+  <img src="preview/Screenshot_590.png" width="350">
+</p>
 
-## 📸 button and options + hover
+---
 
-next question not hovered
-![Quiz Screenshot](preview/Screenshot_603.png)
+## 📸 Buttons and Options + Hover Effects
 
-try again (play again) and next question hovered
-![Quiz Screenshot](preview/Screenshot_597.png)
-![Quiz Screenshot](preview/Screenshot_602.png)
+**Next Question (Not Hovered)**
+<p align="center">
+  <img src="preview/Screenshot_603.png" width="400">
+</p>
 
-quiz options + visible timer + visible progress bar
-![Quiz Screenshot](preview/Screenshot_599.png)
+**Try Again & Next Question (Hovered)**
+<p align="center">
+  <img src="preview/Screenshot_597.png" width="350">
+  <img src="preview/Screenshot_602.png" width="350">
+</p>
 
-quiz option hovered + visible timer + visible progress bar
-![Quiz Screenshot](preview/Screenshot_600.png)
+---
 
-quiz option correct + visible progress bar
-![Quiz Screenshot](preview/Screenshot_601.png)
+## 📸 Quiz Options, Timer, and Progress Bar
 
-quiz option wrong answer + visibe progress bar
-![Quiz Screenshot](preview/Screenshot_605.png)
+**Default View**
+<p align="center">
+  <img src="preview/Screenshot_599.png" width="400">
+</p>
+
+**Option Hovered**
+<p align="center">
+  <img src="preview/Screenshot_600.png" width="400">
+</p>
+
+**Correct Answer Selected**
+<p align="center">
+  <img src="preview/Screenshot_601.png" width="400">
+</p>
+
+**Wrong Answer Selected**
+<p align="center">
+  <img src="preview/Screenshot_605.png" width="400">
+</p>
