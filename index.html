@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JS Quiz App</title>
+     <!-- Link to external CSS file and Google Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main quiz container -->
+    <div id="quiz-container">
+         <!-- Header: Title and Progress Bar -->
+        <header>
+            <h1 id="quiz-title">JavaScript Quiz Challenge</h1>
+
+             <!-- Progress bar shows how far the user is in the quiz -->
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <!-- Current question number display -->
+            <p id="progress-text">
+                Question <span id="current-q">1</span> of <span id="total-q">4</span>
+            </p>
+        </header>
+
+        <!-- Main Question Section -->
+        <main id="question-container">
+
+            <!-- Displays the question text -->
+            <h2 id="question">Loading...</h2>
+
+            <!-- Container for multiple-choice options -->
+            <div id="options"></div>
+
+             <!-- Timer section (appears during each question) -->
+            <div id="timer-container" style="display: none;">
+                <div id="timer-bar">
+                    <div id="timer-fill"></div>
+                </div>
+                <p>Time left: <span id="timer-text">30</span>s</p>
+            </div>
+
+            <!-- Next Question button (hidden until an answer is chosen) -->
+            <button id="next-btn" style="display: none;" onclick="nextQuestion()">Next Question</button>
+        </main>
+
+        <!-- Score Display Section -->
+        <div id="score-container" style="display: none;">
+
+            <!-- Circular score indicator -->
+            <div class="score-circle">
+                <span id="score-circle-text">0</span>
+                <p>/ <span id="total-score">0</span></p>
+            </div>
+
+            <!-- Feedback and high score display -->
+            <h2>Your Score</h2>
+            <p id="feedback">Great job! Review weak spots in the notes.</p>
+            <p id="high-score" style="display: none;">High Score: <span id="high-score-val">0</span></p>
+
+            <!-- Restart Quiz button -->
+            <button onclick="restartQuiz()">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

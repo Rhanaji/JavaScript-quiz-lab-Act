@@ -1,0 +1,332 @@
+/* 
+Improved CSS: 
+Modern, responsive design with animations, better colors, and accessibility
+Features: Gradient theme, animations, accessibility, and mobile support
+*/
+
+/* body page style */
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* quiz container */
+#quiz-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header section */
+header h1 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#progress-bar {
+    width: 100%;
+
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #48bb78, #38a169);
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+#progress-text {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* question section */
+#question-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+/* answer options */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* option button (default look) */
+.option {
+    padding: 15px;
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+/* option Hovering and focus effects*/
+.option:hover {
+    background: #edf2f7;
+    border-color: #4299e1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.option:focus {
+    outline: 2px solid #4299e1;
+    outline-offset: 2px;
+}
+
+/* Correcting option Colors*/
+.correct {
+    background: #c6f6d5 !important;
+    border-color: #38a169 !important;
+    color: #22543d;
+}
+
+.incorrect {
+    background: #fed7d7 !important;
+    border-color: #e53e3e !important;
+    color: #742a2a;
+}
+
+/* Next question button */
+#next-btn {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+/* Hover and click effect*/
+#next-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(72, 187, 120, 0.4);
+}
+
+#next-btn:active {
+    transform: scale(0.97);
+}
+
+#next-btn {
+    margin-top: 20px;
+    margin-bottom: 1em;
+}
+
+/* animation button fade-in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#next-btn {
+    animation: fadeInUp 0.3s ease;
+}
+
+/* Time Section */
+#timer-container {
+    margin: 20px 0;
+}
+
+#timer-bar {
+    width: 100%;
+    height: 6px;
+    background: #fed7d7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#timer-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #48bb78, #38a169);
+    width: 100%;
+    transition: width 1s linear;
+}
+
+#timer-text {
+    font-weight: 600;
+    color: #e53e3e;
+}
+
+/* score Display section */
+#score-container {
+    animation: fadeIn 0.5s ease;
+}
+
+/*animation fade-in for score screen*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* circular score Display*/
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+/* main score text + total score inside the circle*/
+#score-circle-text {
+    font-size: 3em;
+    line-height: 1;
+}
+
+.score-circle p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* Score title and feedback */
+#score-container h2 {
+    color: #4a5568;
+    margin: 20px 0;
+}
+
+#feedback {
+    font-size: 1.1em;
+    color: #718096;
+
+    margin-bottom: 20px;
+}
+
+/* high score box */
+#high-score {
+    background: #f7fafc;
+    padding: 10px;
+    border-radius: 10px;
+    color: #4299e1;
+    font-weight: 600;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    #quiz-container {
+        padding: 20px;
+    }
+
+    .option {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .score-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    #score-circle-text {
+        font-size: 2.5em;
+    }
+}
+
+/* Option Flip Animation */
+@keyframes flipOption {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(90deg);
+        background-color: #ccc;
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.option {
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+}
+
+.option.correct {
+    animation: flipOption 0.6s ease;
+    background-color: #4CAF50;
+    color: rgb(52, 52, 52);
+}
+
+.option.incorrect {
+    animation: flipOption 0.6s ease;
+    background-color: #f44336;
+    color: white;
+}
+
+/* Try Again Button Styling */
+#score-container button {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    /* same gradient as Next */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+/* Hover & Active Effects for Try Again Button */
+#score-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(72, 187, 120, 0.4);
+}
+
+#score-container button:active {
+    transform: scale(0.97);
+}
+
+#score-container button {
+    margin-top: 15px;
+    margin-bottom: 1em;
+}
