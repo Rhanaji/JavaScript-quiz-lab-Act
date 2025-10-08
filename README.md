@@ -3,6 +3,7 @@ A simple interactive quiz app featuring a timer, progress bar, animations, and l
 
 ## 📸 Result preview
 <p align="center">
+  hardest and most challenging part was trying to figure out where the problem connected to and what the problems really were, i learned to double check my spelling, asking several quesions, and using the console to help find ay missing ID's or typos
   <img src="preview/Screenshot_590.png" alt="Quiz Screenshot" width="400">
 </p>
 
